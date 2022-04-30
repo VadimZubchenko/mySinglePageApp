@@ -1,0 +1,28 @@
+{
+  "name": "mysinglepageapp",
+  "version": "1.0.0",
+  "description": "single-page application, SPA with Asynchronous Javascript and XML",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VadimZubchenko/mySinglePageApp.git"
+  },
+  "keywords": [
+    "spa",
+    "ajax",
+    "server"
+  ],
+  "author": "vadim zubchenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VadimZubchenko/mySinglePageApp/issues"
+  },
+  "homepage": "https://github.com/VadimZubchenko/mySinglePageApp#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
