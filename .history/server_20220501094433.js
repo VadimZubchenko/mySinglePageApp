@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
 
-//create database on server side
+const req = require("express/lib/request");
+const res = require("express/lib/response");
+
 let database = [];
 let id = 100;
 
@@ -13,18 +15,15 @@ app.use(express.static("public"));
 
 app.use(express.json());
 
-// GET on server side, for getting data from outside of server
 app.get("/api/contact", function (req, res) {
   return res.status(200).json(database);
 });
-// POST on server side to recieve data into server
 app.post("/api/contact", function (req, res) {
   let contact = {
     id: id,
     name: req.body.name,
   };
   id++;
-  // put data into database on the server side
   database.push(contact);
   return res.status(201).json(contact);
 });

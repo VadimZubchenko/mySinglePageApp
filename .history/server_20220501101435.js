@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 
-//create database on server side
 let database = [];
 let id = 100;
 
