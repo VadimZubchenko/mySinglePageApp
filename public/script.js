@@ -55,7 +55,7 @@ addToList = async () => {
     body: JSON.stringify(contact),
   };
   // c. check if sent data is gotten on server side.
-  let url = "/api/contact";
+  let url = "/contact";
   let response = await fetch(url, request);
   if (response.ok) {
     name.value = "";

@@ -14,11 +14,11 @@ app.use(express.static("public"));
 app.use(express.json());
 
 // GET on server side, for getting data from outside of server
-app.get("/api/contact", function (req, res) {
+app.get("/contact", function (req, res) {
   return res.status(200).json(database);
 });
 // POST on server side to recieve data into server
-app.post("/api/contact", function (req, res) {
+app.post("/contact", function (req, res) {
   let contact = {
     id: id,
     name: req.body.name,
